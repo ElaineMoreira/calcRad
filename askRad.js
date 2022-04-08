@@ -13,4 +13,4 @@ const askPeriodoDeMeiaVidaQuePassou = () => {
   );
 };
 
-console.log(askTempo(), askPeriodoDeMeiaVidaQuePassou());
+module.exports = { askTempo, askPeriodoDeMeiaVidaQuePassou };
