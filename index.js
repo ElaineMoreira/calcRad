@@ -1,6 +1,6 @@
 // juntando tudo para script rodar a formula no terminal
-const { calculaPeríodoDaMeiaVida } = require('./RadLife');
-const { askElemento, askTempo, askPeriodoDeMeiaVidaQuePassou } = require('./askRad');
+const { calculaPeríodoDaMeiaVida } = require('./src/RadLife');
+const { askElemento, askTempo, askPeriodoDeMeiaVidaQuePassou } = require('./src/askRad');
 
 const nome = askElemento();
 const tempo = askTempo();
