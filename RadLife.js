@@ -10,5 +10,7 @@ P = t
 */
 
 const calculaperíodoDaMeiaVida = (tempo, quantidadePassouMeiaVida) => {
-    
+    return (tempo / quantidadePassouMeiaVida).toFixed(2)
 };
+
+module.exports = { calculaperíodoDaMeiaVida };
