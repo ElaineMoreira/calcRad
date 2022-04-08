@@ -5,10 +5,10 @@ O período da meia-vida (P) de um material radioativo pode ser determinado pela 
 P = t 
     x
 
-*@param {float} tempo tempo que sofreu desintegraçoes
-*@param {float} quantidadePassouMeiaVida quantidade de meias vidas que passou
+*@param {Number} tempo tempo que sofreu desintegraçoes
+*@param {Number} quantidadePassouMeiaVida quantidade de meias vidas que passou
 */
 
 const calculaperíodoDaMeiaVida = (tempo, quantidadePassouMeiaVida) => {
-
+    
 };
