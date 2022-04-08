@@ -8,4 +8,4 @@ const periodoDeMeiaVidaQuePassou = askPeriodoDeMeiaVidaQuePassou();
 
 const result = calculaPeríodoDaMeiaVida(tempo, periodoDeMeiaVidaQuePassou)
 
-console.log(`O periodo de meia vida do ${nome}, material radioativo é ${result} anos !`);
+console.log(`========================================================\n\nO periodo de meia vida do ${nome}, material radioativo é ${result} anos !\n\n========================================================`);
