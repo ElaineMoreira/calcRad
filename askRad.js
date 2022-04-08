@@ -1,5 +1,9 @@
 const readline = require("readline-sync");
 
+const askElemento = () => {
+  return readline.question('Qual o nome do elemento Radioativo?\n')
+};
+
 const askTempo = () => {
   return readline.questionFloat(
     'Qual o tempo que esse material sofreu desintegraçoes?\n'
@@ -13,4 +17,5 @@ const askPeriodoDeMeiaVidaQuePassou = () => {
   );
 };
 
-module.exports = { askTempo, askPeriodoDeMeiaVidaQuePassou };
+module.exports = { askElemento, askTempo, askPeriodoDeMeiaVidaQuePassou };
+

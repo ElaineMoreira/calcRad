@@ -9,8 +9,8 @@ P = t
 *@param {Number} quantidadePassouMeiaVida quantidade de meias vidas que passou
 */
 
-const calculaperíodoDaMeiaVida = (tempo, quantidadePassouMeiaVida) => {
+const calculaPeríodoDaMeiaVida = (tempo, quantidadePassouMeiaVida) => {
     return (tempo / quantidadePassouMeiaVida).toFixed(2)
 };
 
-module.exports = { calculaperíodoDaMeiaVida };
+module.exports = { calculaPeríodoDaMeiaVida };

@@ -1,10 +1,11 @@
 // juntando tudo para script rodar a formula no terminal
-const { calculaperíodoDaMeiaVida } = require('./RadLife');
-const { askTempo, askPeriodoDeMeiaVidaQuePassou } = require('./askRad');
+const { calculaPeríodoDaMeiaVida } = require('./RadLife');
+const { askElemento, askTempo, askPeriodoDeMeiaVidaQuePassou } = require('./askRad');
 
+const nome = askElemento();
 const tempo = askTempo();
 const periodoDeMeiaVidaQuePassou = askPeriodoDeMeiaVidaQuePassou();
 
-const result = calculaperíodoDaMeiaVida(tempo, periodoDeMeiaVidaQuePassou)
+const result = calculaPeríodoDaMeiaVida(tempo, periodoDeMeiaVidaQuePassou)
 
-console.log(`O periodo de meia vida do material radioativo é ${result} anos ! `);
+console.log(`O periodo de meia vida do ${nome}, material radioativo é ${result} anos !`);
