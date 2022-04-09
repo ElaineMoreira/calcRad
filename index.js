@@ -1,5 +1,6 @@
 // juntando tudo para script rodar a formula no terminal
 /**colocanco modulo "fs" para escrever esses dados inseridos em um arquivo */
+const fs = require('fs');
 const { calculaPeríodoDaMeiaVida } = require('./src/RadLife');
 const { askElemento, askTempo, askPeriodoDeMeiaVidaQuePassou } = require('./src/askRad');
 
@@ -12,3 +13,5 @@ const result = calculaPeríodoDaMeiaVida(tempo, periodoDeMeiaVidaQuePassou)
 const mensagem = `========================================================\n\nO periodo de meia vida do ${nome}, material radioativo é ${result} anos !\n\n========================================================`;
 
 console.log(mensagem);
+/**appendFileSync para guardar/escrever os dados em um arquivo, no caso um '.txt */
+fs.appendFileSync('meiaVidaElementos.txt', `${mensagem}\n`);
