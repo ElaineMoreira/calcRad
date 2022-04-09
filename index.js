@@ -4,7 +4,8 @@ const fs = require('fs');
 const { calculaPeríodoDaMeiaVida } = require('./src/RadLife');
 const { askElemento, askTempo, askPeriodoDeMeiaVidaQuePassou } = require('./src/askRad');
 
-const nome = askElemento();
+function main() {
+  const nome = askElemento();
 const tempo = askTempo();
 const periodoDeMeiaVidaQuePassou = askPeriodoDeMeiaVidaQuePassou();
 
@@ -15,3 +16,6 @@ const mensagem = `========================================================\n\nO 
 console.log(mensagem);
 /**appendFileSync para guardar/escrever os dados em um arquivo, no caso um '.txt */
 fs.appendFileSync('meiaVidaElementos.txt', `${mensagem}\n`);
+}
+
+main();
