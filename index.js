@@ -16,7 +16,8 @@ const mensagem = `========================================================\n\nO 
 console.log(mensagem);
 /**appendFileSync para guardar/escrever os dados em um arquivo, no caso um '.txt */
 await fs.promises.appendFileSync('meiaVidaElementos.txt', `${mensagem}\n`);
-
+/**adiciona mensagem que avisa que foi adicionado os dados */
+console.log('Resultado armazenado com sucesse no aquivo meiaVidaElementos.txt')
 }
 
 main();
