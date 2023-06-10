@@ -4,7 +4,7 @@ O período da meia-vida (P) de um material radioativo pode ser determinado pela 
 
 P = t 
     x
-
+/
 *@param {Number} tempo tempo que sofreu desintegraçoes
 *@param {Number} quantidadePassouMeiaVida quantidade de meias vidas que passou
 */
